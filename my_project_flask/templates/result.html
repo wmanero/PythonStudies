@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Resultado da Calculadora de Máscara de Rede</h1>
+    <p><strong>Endereço IP:</strong> {{ ip }}</p>  <!-- Exibe o endereço IP fornecido -->
+    <p><strong>Prefixo (CIDR):</strong> {{ prefix }}</p>  <!-- Exibe o prefixo CIDR fornecido -->
+    <p><strong>Máscara de Rede:</strong> {{ subnet_mask }}</p>  <!-- Exibe a máscara de rede calculada -->
+    <p><strong>Rede:</strong> {{ network_address }}</p>  <!-- Exibe o endereço de rede calculado -->
+    <p><strong>Quantidade de Hosts Utilizáveis:</strong> {{ usable_hosts }}</p>  <!-- Exibe a quantidade de hosts utilizáveis calculada -->
+    <br>
+    <a href="/">Voltar</a>  <!-- Link para voltar à página inicial -->
+</body>
+</html>
