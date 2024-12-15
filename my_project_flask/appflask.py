@@ -1,3 +1,9 @@
+# Programa: Calculadora de máscara de redes
+# Autor: Welton Silva
+# Data Criação: 15/12/2024
+# Versão: 1.0
+# Nota: Criado com Framework Flask, Python e HTML
+
 from flask import Flask, render_template, request  # Importa as bibliotecas Flask e request
 import ipaddress  # Importa a biblioteca ipaddress para manipulação de endereços IP
 import webbrowser
