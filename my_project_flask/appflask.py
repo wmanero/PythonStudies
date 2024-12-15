@@ -43,6 +43,13 @@ def calculate():
     return render_template('result.html', ip=ip, prefix=prefix, subnet_mask=subnet_mask, network_address=network_address, broadcast_address=broadcast_address, usable_hosts=usable_hosts)
 
 if __name__ == '__main__':
+    # Abre o navegador após um pequeno atraso para garantir que o servidor Flask esteja ativo.
+    threading.Timer(1.25, open_browser).start()
+    app.run(debug=False)
+
+'''
+if __name__ == '__main__':
     #Criar um thread que abrirá o navegador após um pequeno atraso para garantir que o servidor Flask esteja ativo.
     threading.Timer(1.25, open_browser).start()
     app.run(debug=True)  # Inicia o servidor Flask no modo de depuração
+'''
