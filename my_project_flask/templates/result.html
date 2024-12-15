@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Resultado da Calculadora de Máscara de Rede</h1>
-    <p><strong>Endereço IP:</strong> {{ ip }}</p>  <!-- Exibe o endereço IP fornecido -->
-    <p><strong>Prefixo (CIDR):</strong> {{ prefix }}</p>  <!-- Exibe o prefixo CIDR fornecido -->
-    <p><strong>Máscara de Rede:</strong> {{ subnet_mask }}</p>  <!-- Exibe a máscara de rede calculada -->
-    <p><strong>Rede:</strong> {{ network_address }}</p>  <!-- Exibe o endereço de rede calculado -->
-    <p><strong>Quantidade de Hosts Utilizáveis:</strong> {{ usable_hosts }}</p>  <!-- Exibe a quantidade de hosts utilizáveis calculada -->
-    <br>
-    <a href="/">Voltar</a>  <!-- Link para voltar à página inicial -->
+    <div id="titulo">NRE - NETWORK RELIABILITY ENGINEER</div>
+    <div>
+        <h1>Resultado da Calculadora de Máscara de Rede</h1>
+        <p><strong>Endereço IP:</strong> {{ ip }}</p>  <!-- Exibe o endereço IP fornecido -->
+        <p><strong>Prefixo (CIDR):</strong> {{ prefix }}</p>  <!-- Exibe o prefixo CIDR fornecido -->
+        <p><strong>Máscara de Rede:</strong> {{ subnet_mask }}</p>  <!-- Exibe a máscara de rede calculada -->
+        <p><strong>Rede:</strong> {{ network_address }}</p>  <!-- Exibe o endereço de rede calculado -->
+        <p><strong>Broadcast:</strong> {{ broadcast_address }}</p> <!-- Exibe o endereço de Broadcast da rede -->
+        <p><strong>Quantidade de Hosts Utilizáveis:</strong> {{ usable_hosts }}</p>  <!-- Exibe a quantidade de hosts utilizáveis calculada -->
+        <br>
+        <p><a href="/">Voltar</a></p>  <!-- Link para voltar à página inicial -->
+    </div>
 </body>
 </html>

@@ -33,7 +33,7 @@ label {
 input[type="text"],
 input[type="number"] {
     width: 100%;
-    padding: 8px;
+    padding: 2px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
@@ -64,4 +64,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+#titulo {
+    color: dimgrey;
+    font-size: x-large;
+    font-family: Verdana, Tahoma, sans-serif;
 }
